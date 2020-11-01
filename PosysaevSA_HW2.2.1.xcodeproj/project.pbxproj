@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F97CA08B254F31490030264D /* SetModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CA08A254F31490030264D /* SetModeViewController.swift */; };
 		F9AC4CDF2538E3D500D733E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC4CDE2538E3D500D733E2 /* AppDelegate.swift */; };
 		F9AC4CE12538E3D500D733E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC4CE02538E3D500D733E2 /* SceneDelegate.swift */; };
 		F9AC4CE32538E3D500D733E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC4CE22538E3D500D733E2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F97CA08A254F31490030264D /* SetModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetModeViewController.swift; sourceTree = "<group>"; };
 		F9AC4CDB2538E3D500D733E2 /* PosysaevSA_HW2.2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosysaevSA_HW2.2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AC4CDE2538E3D500D733E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9AC4CE02538E3D500D733E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97CA08D254F315D0030264D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC4CDE2538E3D500D733E2 /* AppDelegate.swift */,
+				F9AC4CE02538E3D500D733E2 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		F9AC4CD22538E3D500D733E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +67,8 @@
 		F9AC4CDD2538E3D500D733E2 /* PosysaevSA_HW2.2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				F9AC4CDE2538E3D500D733E2 /* AppDelegate.swift */,
-				F9AC4CE02538E3D500D733E2 /* SceneDelegate.swift */,
+				F97CA08D254F315D0030264D /* SupportingFiles */,
+				F97CA08A254F31490030264D /* SetModeViewController.swift */,
 				F9AC4CE22538E3D500D733E2 /* ViewController.swift */,
 				F9AC4CE42538E3D500D733E2 /* Main.storyboard */,
 				F9AC4CE72538E3D600D733E2 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				F9AC4CE32538E3D500D733E2 /* ViewController.swift in Sources */,
 				F9AC4CDF2538E3D500D733E2 /* AppDelegate.swift in Sources */,
+				F97CA08B254F31490030264D /* SetModeViewController.swift in Sources */,
 				F9AC4CE12538E3D500D733E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
