@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         redTextField.delegate = self
         greenTextField.delegate = self
         blueTextField.delegate = self
+        addDoneButton()
     }
 
     // MARK: - Inner functions
@@ -138,5 +139,33 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     
+    func addDoneButton() {
+        
+        let tooBar: UIToolbar = UIToolbar()
+        tooBar.barStyle = UIBarStyle.default
+        tooBar.items=[
+            UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil),
+            UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.donePressed))]
+        tooBar.sizeToFit()
+       
+        redTextField.inputAccessoryView = tooBar
+        greenTextField.inputAccessoryView = tooBar
+        blueTextField.inputAccessoryView = tooBar
+    }
+    
+    @objc func donePressed() {
+        let _ = textFieldShouldReturn(redTextField)
+        let _ = textFieldShouldReturn(greenTextField)
+        let _ = textFieldShouldReturn(blueTextField)
+        
+        redTextField.resignFirstResponder()
+        greenTextField.resignFirstResponder()
+        blueTextField.resignFirstResponder()
+    }
+    
 }
+
+
+
+
 
